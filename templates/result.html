@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html >
+<head>
+    <style>
+        .bg-img {
+            background-image: url("{% static 'images\disease.png' %}");
+            min-height: 600px;
+              background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+          }
+</style>
+</head>
+
+<body  >
+    <b>
+    <div class="bg-img">
+            <center>
+                <table border="1"cellpadding="5" ><h1>Details of user:</h1>
+                    
+<tr><td> Name              </td>   <td>     {{result.v0}}<br><br></td></tr> <br>
+<tr><td> Symptom1            </td>  <td>  {{result.v1}}<br><br></td></tr> <br>
+<tr><td> Symptom2           </td>  <td>   {{result.v2}}<br><br></td></tr>  
+ <tr><td>Symptom3          </td>   <td>  {{result.v3}}<br><br></td></tr> 
+<tr><td>Symptom4           </td>  <td>   {{result.v4}}<br><br></td></tr>
+                    
+<tr><td>Symptom5           </td> <td> {{result.v5}}<br><br></td></tr>
+<tr><td>Naive bayes        </td>      <td>  {{result.t1}}<br><br></td></tr>
+<tr><td>Decision forest    </td>   <td>      {{result.t2}}<br><br></td></tr>
+<tr><td>Random forest        </td>      <td> {{result.t3}}</td></tr></table>
+            </center> 
+    
+   </div>
+</b>  
+</body>
+</html>
+
+
